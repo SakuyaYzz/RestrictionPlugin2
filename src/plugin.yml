@@ -1,0 +1,27 @@
+name: RestrictionPlugin2
+main: org.shaku.restrictionPlugin2.RestrictionPlugin2
+version: 2.0-SNAPSHOT          # 与您的文件名版本保持一致
+api-version: 1.21
+authors: [shaku]
+description: 世界级别限制插件（冰霜行者、飞行、命令、传送）
+
+commands:
+  restrictionreload:
+    description: 重载插件配置
+    usage: /restrictionreload
+    permission: worldrestrictions.reload
+    permission-message: "§c你没有权限执行此命令!"
+
+permissions:
+  worldrestrictions.reload:
+    description: 允许重载配置
+    default: op
+  worldrestrictions.bypass.fly:
+    description: 绕过飞行限制
+    default: false
+  worldrestrictions.bypass.command:
+    description: 绕过命令限制
+    default: false
+  worldrestrictions.bypass.teleport:
+    description: 绕过传送限制（备用）
+    default: false

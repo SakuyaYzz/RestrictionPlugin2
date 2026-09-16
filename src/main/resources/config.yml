@@ -1,0 +1,50 @@
+# 禁用冰霜行者的世界列表
+frost-walker-disabled-worlds:
+  - '主世界'
+  - '酒店'
+  - "地狱之际"
+  - "沙漠神殿"
+  - "公会争霸赛"
+  - "竞技场"
+  - "失落之城"
+  - "拍卖行"
+
+# 禁止飞行的世界列表
+no-fly-worlds:
+  - '酒店'
+  - "地狱之际"
+  - "沙漠神殿"
+  - "公会争霸赛"
+  - "竞技场"
+  - "失落之城"
+  - "拍卖行"
+
+# 禁止传送的目标世界
+teleport-blocked-worlds:
+  - '拍卖行'
+
+# 需要检测的传送命令列表（不区分大小写）
+teleport-commands:
+  - tpa
+  - tpahere
+  - back
+  - home
+  - tpaccept
+  - pp
+
+# 世界命令限制配置
+command-restrictions:
+  survival_world:
+    - fly
+    - efly
+    - tpa
+  mining_world:
+    - home
+    - sethome
+    - back
+
+# 消息自定义
+messages:
+  command-blocked: "§c此命令在该世界被禁用!"
+  fly-disabled: "§c此世界禁止飞行!"
+  teleport-blocked: "§c目标世界禁止传送!"
